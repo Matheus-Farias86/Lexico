@@ -1,8 +1,20 @@
 # Léxico: Design & Estrutura
 
-**Léxico** é uma plataforma estática de documentação técnica focada na interseção entre a história do design e a engenharia de interface. 
+### 1. Contexto
+O Léxico é uma plataforma estática de documentação técnica que atua como um híbrido entre portfólio editorial e guia de referência. Seu domínio combina história do design (movimentos como Bauhaus e Swiss Design) com engenharia de interface, organizando conteúdos de forma semântica e altamente legível.
 
-O projeto centraliza um repositório de movimentos históricos (ex: Bauhaus, Swiss Design) e um playbook prático de componentes (ex: Botões, Cards), priorizando semântica HTML5 rigorosa, arquitetura CSS modular e uma estética editorial minimalista de alta legibilidade.
+### 2. Público-alvo
+
+Estudantes e desenvolvedores iniciantes/intermediários de 18 a 35 anos, designers digitais e entusiastas de UI/UX. O acesso ocorre majoritariamente via desktop, em contextos de estudo, consulta técnica e inspiração para projetos.
+
+### 3. Dor Principal
+
+Atualmente, o usuário não consegue encontrar, em um único lugar, uma integração clara entre fundamentos históricos do design e aplicações práticas em componentes de interface, o que fragmenta o aprendizado e dificulta a aplicação consistente desses conceitos.
+
+### 4. Critério de Sucesso
+
+O usuário consegue navegar pela plataforma e compreender rapidamente a relação entre teoria e prática, aplicando um conceito de design em um componente de interface funcional em menos de 10 minutos.
+
 
 ## Autores
 - José Matheus Mendonça Farias
@@ -17,3 +29,6 @@ O projeto centraliza um repositório de movimentos históricos (ex: Bauhaus, Swi
 
 ---
 *Projeto desenvolvido para a disciplina de Aplicações para Internet.*
+
+
+

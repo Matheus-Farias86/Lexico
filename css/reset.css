@@ -1,0 +1,65 @@
+/* reset.css — Modern CSS Reset (Andy Bell, 2024) */
+/* 1. Box-sizing universal */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 3. Corpo */
+body {
+    min-height: 100vh;
+    line-height: var(--leading-normal, 1.5);
+    font-family: var(--font-body, system-ui, sans-serif);
+    font-size: var(--font-base, 1rem);
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-primary);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 4. Imagens responsivas por padrão */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 5. Herança de fonte em inputs */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 6. Quebra de texto segura */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 7. Respeito à preferência de redução de movimento */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}

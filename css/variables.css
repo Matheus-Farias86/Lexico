@@ -1,0 +1,27 @@
+/* typography.css — Sistema tipográfico do projeto */
+:root {
+    /* Famílias */
+    --font-heading: 'Google Sans', system-ui, sans-serif;
+    --font-body: 'Google Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+    /* Escala modular (Major Third — 1.250) */
+    --font-xs: 0.640rem;
+    --font-sm: 0.800rem;
+    --font-base: 1.000rem; /* 16px */
+    --font-md: 1.250rem;
+    --font-lg: 1.563rem;
+    --font-xl: 1.953rem;
+    --font-2xl: 2.441rem;
+    --font-3xl: 3.052rem;
+
+    /* Peso tipográfico */
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-bold: 700;
+
+    /* Line-height */
+    --leading-tight: 1.2;   /* headings */
+    --leading-normal: 1.5;  /* body */
+    --leading-loose: 1.8;   /* leitura longa */
+}
