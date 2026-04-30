@@ -16,6 +16,26 @@ Atualmente, o usuário não consegue encontrar, em um único lugar, uma integra�
 O usuário consegue navegar pela plataforma e compreender rapidamente a relação entre teoria e prática, aplicando um conceito de design em um componente de interface funcional em menos de 10 minutos.
 
 
+## Sistema Visual — Paleta de Cores
+
+Nome da paleta: Areia & Marrom Editorial
+
+Fonte de inspiração:
+A paleta foi inspirada em materiais editoriais impressos, como papel envelhecido, livros clássicos e tipografia tradicional. O objetivo é transmitir uma sensação de leitura confortável, sofisticação e foco no conteúdo, alinhado à proposta minimalista do projeto.
+
+Cores principais:
+
+#fdf6e3 — Areia Light (fundo principal)
+#f4ecd8 — Areia Base (variação de fundo)
+#3e2723 — Marrom Dark (texto principal)
+#5d4037 — Marrom Medium (subtítulos)
+#8d6e63 — Marrom Accent (destaques)
+#d7ccc8 — Marrom Light (bordas e elementos suaves)
+
+Observação de uso:
+A combinação prioriza alto contraste para leitura prolongada, com tons neutros que evitam fadiga visual e reforçam a hierarquia tipográfica.
+
+
 ## Autores
 - José Matheus Mendonça Farias
 - José Liedson da Silva
