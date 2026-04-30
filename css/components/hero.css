@@ -1,0 +1,27 @@
+/* ---------------------------------------------------------
+   HERO / ARTICLE
+   --------------------------------------------------------- */
+.hero-article {
+    padding: var(--space-lg) var(--space-sm);
+}
+
+.article-title {
+    font-family: var(--font-serif);
+    font-size: var(--fs-h2);
+    line-height: 1.2;
+    margin-bottom: var(--space-xs);
+}
+
+.meta {
+    font-size: 0.75rem;
+    color: var(--marrom-accent);
+    margin-bottom: var(--space-md);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.intro .lead {
+    font-size: 1.15rem;
+    color: var(--marrom-medium);
+    margin-bottom: var(--space-lg);
+}

@@ -1,27 +1,60 @@
-/* typography.css — Sistema tipográfico do projeto */
 :root {
-    /* Famílias */
-    --font-heading: 'Google Sans', system-ui, sans-serif;
-    --font-body: 'Google Sans', system-ui, sans-serif;
-    --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+    /* --- Paleta de Cores (Passo 4.2) --- */
+    --color-primary: #5d4037;       /* Marrom Medium (Primária) */
+    --color-text: #3e2723;          /* Marrom Dark (Texto Principal) */
+    --color-bg-secondary: #fdf6e3;  /* Areia Light (Fundo Secundário) */
+    --color-border: #8d6e63;        /* Marrom Accent (Borda) */
+    --color-success: #2e7d32;       /* Verde Editorial (Sucesso) */
 
-    /* Escala modular (Major Third — 1.250) */
-    --font-xs: 0.640rem;
-    --font-sm: 0.800rem;
-    --font-base: 1.000rem; /* 16px */
-    --font-md: 1.250rem;
-    --font-lg: 1.563rem;
-    --font-xl: 1.953rem;
-    --font-2xl: 2.441rem;
-    --font-3xl: 3.052rem;
+    /* Cores de suporte e legados do design original */
+    --areia-base: #f4ecd8;
+    --marrom-light: #d7ccc8;
+    --border-papel: 1px solid var(--color-border);
+    --bg-dot: rgba(255, 255, 255, 0.2);
 
-    /* Peso tipográfico */
-    --weight-regular: 400;
-    --weight-medium: 500;
-    --weight-bold: 700;
+    /* --- Tipografia --- */
+    --font-serif: "Georgia", "Times New Roman", serif;
+    --font-sans: 'Google Sans', "Helvetica Neue", Arial, sans-serif;
+    
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-base: clamp(0.875rem, 2vw, 1rem);
+    --fs-md: 1.25rem;
+    --fs-lg: 1.5rem;
+    --fs-h2: clamp(1.25rem, 3vw, 1.875rem);
+    --fs-h1: clamp(1.75rem, 4vw, 2.5rem);
 
-    /* Line-height */
-    --leading-tight: 1.2;   /* headings */
-    --leading-normal: 1.5;  /* body */
-    --leading-loose: 1.8;   /* leitura longa */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+
+    --leading-tight: 1.2;
+    --leading-normal: 1.5;
+    --leading-loose: 1.8;
+
+    /* --- Espaçamento e Breakpoints --- */
+    --space-xs: clamp(0.25rem, 1vw, 0.5rem);
+    --space-sm: clamp(0.75rem, 2vw, 1rem);
+    --space-md: clamp(1.25rem, 3vw, 1.5rem);
+    --space-lg: clamp(1.75rem, 4vw, 2.5rem);
+    --space-xl: clamp(2.5rem, 6vw, 4rem);
+
+    --bp-sm: 480px;
+    --bp-md: 768px;
+    --bp-lg: 1024px;
+    --bp-xl: 1280px;
+}
+
+/* --- Suporte a Dark Mode --- */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --areia-light: #1a1a1a;
+        --areia-base: #121212;
+        --marrom-dark: #e0d5c1;
+        --marrom-medium: #d7ccc8;
+        --marrom-accent: #8d6e63;
+        --marrom-light: #3e2723;
+        --border-papel: 1px solid #3e2723;
+        --bg-dot: rgba(255, 255, 255, 0.05);
+    }
 }

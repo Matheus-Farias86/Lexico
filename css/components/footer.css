@@ -1,0 +1,10 @@
+/* ---------------------------------------------------------
+   FOOTER ESPECÍFICO
+   --------------------------------------------------------- */
+.main-footer p {
+    margin-bottom: var(--space-xs);
+}
+
+.main-footer p:last-child {
+    margin-bottom: 0;
+}

@@ -4,17 +4,35 @@
 O Léxico é uma plataforma estática de documentação técnica que atua como um híbrido entre portfólio editorial e guia de referência. Seu domínio combina história do design (movimentos como Bauhaus e Swiss Design) com engenharia de interface, organizando conteúdos de forma semântica e altamente legível.
 
 ### 2. Público-alvo
-
 Estudantes e desenvolvedores iniciantes/intermediários de 18 a 35 anos, designers digitais e entusiastas de UI/UX. O acesso ocorre majoritariamente via desktop, em contextos de estudo, consulta técnica e inspiração para projetos.
 
 ### 3. Dor Principal
-
 Atualmente, o usuário não consegue encontrar, em um único lugar, uma integração clara entre fundamentos históricos do design e aplicações práticas em componentes de interface, o que fragmenta o aprendizado e dificulta a aplicação consistente desses conceitos.
 
 ### 4. Critério de Sucesso
-
 O usuário consegue navegar pela plataforma e compreender rapidamente a relação entre teoria e prática, aplicando um conceito de design em um componente de interface funcional em menos de 10 minutos.
 
+---
+
+## 5. Planejamento da Interface
+
+### Wireframe
+![Wireframe do Projeto](assets/wireframe.png)
+*Estrutura planejada para a página principal, focada em uma grade bicoluna com navegação superior e sidebar de referências.*
+
+### Paleta de Cores (Passo 4.2)
+**Nome:** Estética Editorial Clássica  
+**Inspiração:** Materiais editoriais impressos, como papel envelhecido, livros clássicos e tipografia tradicional. O objetivo é transmitir uma sensação de leitura confortável, sofisticação e foco no conteúdo, alinhado à proposta minimalista do projeto e aos princípios do Swiss Design.
+
+- **Cor Primária (`#5d4037`):** Marrom Medium — Usada em subtítulos, elementos de destaque e navegação.
+- **Cor de Texto Principal (`#3e2723`):** Marrom Dark — Tom de chumbo escuro para máximo conforto na leitura.
+- **Cor de Fundo Secundário (`#fdf6e3`):** Areia Light — Fundo principal das áreas de conteúdo (folha).
+- **Cor de Borda (`#8d6e63`):** Marrom Accent — Usada para divisórias suaves e contornos de componentes.
+- **Cor de Sucesso (`#2e7d32`):** Verde Editorial — Tom sóbrio para feedbacks positivos e validações.
+
+**Observação de uso:** A combinação prioriza alto contraste para leitura prolongada, com tons neutros que evitam fadiga visual e reforçam a hierarquia tipográfica.
+
+---
 
 ## Sistema Visual — Paleta de Cores
 
@@ -42,13 +60,9 @@ A combinação prioriza alto contraste para leitura prolongada, com tons neutros
 
 ## Tecnologias e Diretrizes
 - **HTML5 (Semântico):** Uso focado de tags como `<header>`, `<main>`, `<article>`, `<section>`, etc.
-- **CSS3 (Modular):** Variáveis, ausência de estilos *inline*, boas práticas de especificidade e design responsivo.
-- **Vanilla JS:** Uso exclusivo de JavaScript nativo, apenas se estritamente necessário.
-- **Acessibilidade:** Contraste de cores adequado, uso de `alt` em imagens e suporte a navegação por teclado.
+- **CSS3 (Modular):** Arquitetura ITCSS (Settings, Tools, Generic, Elements, Objects, Components, Utilities).
+- **Acessibilidade:** Verificação de contraste WebAIM (Ratio ≥ 4.5:1), suporte a `prefers-reduced-motion` e navegação via teclado.
 - **Hospedagem:** GitHub Pages.
 
 ---
 *Projeto desenvolvido para a disciplina de Aplicações para Internet.*
-
-
-
