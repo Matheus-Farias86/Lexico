@@ -13,6 +13,17 @@
     padding: var(--space-sm);
     background: rgba(255, 255, 255, 0.02);
     transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.card-img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border: 1px solid var(--marrom-light);
+    margin-bottom: var(--space-xs);
 }
 
 .card h4 {

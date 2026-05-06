@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Léxico</title>
+    
+    <!-- Fontes Externas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+
+    <!-- Configurações e Variáveis -->
+    <link rel="stylesheet" href="css/variables.css">
+    
+    <!-- Reset e Base -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    
+    <!-- Layout -->
+    <link rel="stylesheet" href="css/layout.css">
+    
+    <!-- Componentes -->
+    <link rel="stylesheet" href="css/components/nav.css">
+    <link rel="stylesheet" href="css/components/hero.css">
+    <link rel="stylesheet" href="css/components/card.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    
+    <!-- Utilitários -->
+    <link rel="stylesheet" href="css/utilities.css">
+</head>
+<body>
+    <div class="folha-papel">
+        <header class="main-header">
+            <h1 class="logo">Léxico</h1>
+            <p class="tagline">Design & Estrutura</p>
+            
+            <!-- Menu Hambúrguer -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="historia.html">História</a></li>
+                    <li><a href="playbook.html">Playbook</a></li>
+                    <li><a href="sobre.html" class="active">Sobre</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <article class="hero-article">
+                <header>
+                    <h2 class="article-title">Sobre o Projeto</h2>
+                    <div class="meta">Engenharia de Interface 2026</div>
+                </header>
+                
+                <section id="visao" class="content-section">
+                    <h3>Visão</h3>
+                    <p>O Léxico é uma plataforma de documentação técnica focada na interseção entre a história do design e a engenharia de interface moderno.</p>
+                </section>
+
+                <section id="equipe" class="content-section">
+                    <h3>Equipe</h3>
+                    <p>Desenvolvido por José Matheus Mendonça Farias e José Liedson da Silva.</p>
+                </section>
+            </article>
+        </main>
+
+        <aside class="sidebar">
+            <section class="widget">
+                <h4>Sumário</h4>
+                <ul>
+                    <li><a href="#visao">Visão</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                </ul>
+            </section>
+        </aside>
+
+        <footer class="main-footer">
+            <p>&copy; 2026 Léxico: Design & Estrutura. José Matheus Mendonça Farias & José Liedson da Silva.</p>
+        </footer>
+    </div>
+    <script src="js/main.js" defer></script>
+</body>
+</html>

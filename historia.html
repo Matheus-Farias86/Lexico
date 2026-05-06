@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História - Léxico</title>
+    
+    <!-- Fontes Externas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+
+    <!-- Configurações e Variáveis -->
+    <link rel="stylesheet" href="css/variables.css">
+    
+    <!-- Reset e Base -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    
+    <!-- Layout -->
+    <link rel="stylesheet" href="css/layout.css">
+    
+    <!-- Componentes -->
+    <link rel="stylesheet" href="css/components/nav.css">
+    <link rel="stylesheet" href="css/components/hero.css">
+    <link rel="stylesheet" href="css/components/card.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    
+    <!-- Utilitários -->
+    <link rel="stylesheet" href="css/utilities.css">
+</head>
+<body>
+    <div class="folha-papel">
+        <header class="main-header">
+            <h1 class="logo">Léxico</h1>
+            <p class="tagline">A Jornada do Design através do Tempo</p>
+            
+            <!-- Menu Hambúrguer -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="historia.html" class="active">História</a></li>
+                    <li><a href="playbook.html">Playbook</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <article class="hero-article">
+                <header>
+                    <h2 class="article-title">Movimentos que Moldaram o Mundo</h2>
+                    <div class="meta">Cronologia Técnica do Design</div>
+                </header>
+                
+                <section id="bauhaus" class="content-section">
+                    <h3>Bauhaus (1919-1933)</h3>
+                    <img src="assets/bauhaus.webp" alt="Cartaz do movimento Bauhaus por Joost Schmidt" class="card-img">
+                    <p>A Bauhaus foi o marco zero do design moderno. Sua filosofia "a forma segue a função" revolucionou a maneira como pensamos interfaces hoje.</p>
+                </section>
+
+                <hr class="divider">
+
+                <section id="swiss" class="content-section">
+                    <h3>Swiss Design / International Style</h3>
+                    <img src="assets/swiss.webp" alt="Exemplos de Grids no Swiss Design" class="card-img">
+                    <p>O Estilo Suíço trouxe o rigor matemático e o uso sistemático de grids, elementos fundamentais para o desenvolvimento de layouts responsivos modernos.</p>
+                </section>
+            </article>
+        </main>
+
+        <aside class="sidebar">
+            <section class="widget">
+                <h4>Sumário</h4>
+                <ul>
+                    <li><a href="#bauhaus">Bauhaus</a></li>
+                    <li><a href="#swiss">Swiss Design</a></li>
+                </ul>
+            </section>
+        </aside>
+
+        <footer class="main-footer">
+            <p>&copy; 2026 Léxico: Design & Estrutura. José Matheus Mendonça Farias & José Liedson da Silva.</p>
+        </footer>
+    </div>
+    <script src="js/main.js" defer></script>
+</body>
+</html>
