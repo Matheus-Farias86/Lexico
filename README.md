@@ -20,18 +20,6 @@ O usuário consegue navegar pela plataforma e compreender rapidamente a relaçã
 ![Wireframe do Projeto](assets/wireframe.png)
 *Estrutura planejada para a página principal, focada em uma grade bicoluna com navegação superior e sidebar de referências.*
 
-### Paleta de Cores (Passo 4.2)
-**Nome:** Estética Editorial Clássica  
-**Inspiração:** Materiais editoriais impressos, como papel envelhecido, livros clássicos e tipografia tradicional. O objetivo é transmitir uma sensação de leitura confortável, sofisticação e foco no conteúdo, alinhado à proposta minimalista do projeto e aos princípios do Swiss Design.
-
-- **Cor Primária (`#5d4037`):** Marrom Medium — Usada em subtítulos, elementos de destaque e navegação.
-- **Cor de Texto Principal (`#3e2723`):** Marrom Dark — Tom de chumbo escuro para máximo conforto na leitura.
-- **Cor de Fundo Secundário (`#fdf6e3`):** Areia Light — Fundo principal das áreas de conteúdo (folha).
-- **Cor de Borda (`#8d6e63`):** Marrom Accent — Usada para divisórias suaves e contornos de componentes.
-- **Cor de Sucesso (`#2e7d32`):** Verde Editorial — Tom sóbrio para feedbacks positivos e validações.
-
-**Observação de uso:** A combinação prioriza alto contraste para leitura prolongada, com tons neutros que evitam fadiga visual e reforçam a hierarquia tipográfica.
-
 ---
 
 ## Sistema Visual — Paleta de Cores
@@ -52,7 +40,6 @@ Cores principais:
 
 Observação de uso:
 A combinação prioriza alto contraste para leitura prolongada, com tons neutros que evitam fadiga visual e reforçam a hierarquia tipográfica.
-
 
 ## Autores
 - José Matheus Mendonça Farias
