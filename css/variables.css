@@ -1,5 +1,14 @@
 :root {
-    /* --- Paleta de Cores (Passo 4.2) --- */
+    /* --- Paleta de Cores (Aula 09 - Checkpoint) --- */
+    --color-primary-100: #E6F0F9;
+    --color-primary-500: #2E75B6;
+    --color-primary-900: #1E4D78;
+    
+    --color-neutral-100: #F3F4F6;
+    --color-neutral-500: #6B7280;
+    --color-neutral-900: #111827;
+
+    /* --- Paleta de Cores Original (Identidade Visual) --- */
     --color-primary: #5d4037;       /* Marrom Medium (Primária) */
     --color-text: #3e2723;          /* Marrom Dark (Texto Principal) */
     --color-bg-secondary: #fdf6e3;  /* Areia Light (Fundo Secundário) */
@@ -11,6 +20,13 @@
     --marrom-light: #d7ccc8;
     --border-papel: 1px solid var(--color-border);
     --bg-dot: rgba(255, 255, 255, 0.2);
+
+    /* --- Tokens de Aula 09 (Bordas e Sombras) --- */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+    --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
 
     /* --- Tipografia --- */
     --font-serif: "Georgia", "Times New Roman", serif;

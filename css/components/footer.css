@@ -1,10 +1,104 @@
 /* ---------------------------------------------------------
-   FOOTER ESPECÍFICO
+   FOOTER (BEM Component)
    --------------------------------------------------------- */
-.main-footer p {
+.footer {
+    background-color: var(--color-text);
+    color: var(--marrom-light);
+    padding: var(--space-xl) var(--space-md);
+    text-align: center;
+    font-size: var(--fs-xs);
+    border-top: 2px solid var(--color-primary);
+    order: 4;
+}
+
+.footer__info {
+    margin-bottom: var(--space-md);
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
+.footer__link {
+    color: var(--marrom-light);
+    text-decoration: none;
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-medium);
+    transition: color 0.3s ease;
+    opacity: 0.9;
+}
+
+.footer__link:hover {
+    color: var(--areia-base);
+    text-decoration: underline;
+}
+
+/* Ajustes Dark Mode para links */
+@media (prefers-color-scheme: dark) {
+    .footer__link:hover {
+        color: #ffffff;
+    }
+}
+
+.footer__copyright {
+    grid-column: 1 / -1; /* Ocupa a largura total no grid */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: var(--space-md);
+    margin-top: var(--space-md);
+    width: 100%;
+}
+
+.footer__text {
+    color: var(--marrom-light);
+    opacity: 0.8;
     margin-bottom: var(--space-xs);
 }
 
-.main-footer p:last-child {
-    margin-bottom: 0;
+.footer__text--highlight {
+    color: var(--areia-base);
+    font-weight: var(--fw-bold);
+}
+
+/* Ajustes Dark Mode */
+@media (prefers-color-scheme: dark) {
+    .footer {
+        background-color: #0a0a0a;
+        border-top-color: var(--marrom-accent);
+    }
+    
+    .footer__text {
+        color: #d1d1d1;
+        opacity: 0.9;
+    }
+    
+    .footer__text--highlight {
+        color: #ffffff;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+        gap: var(--space-md);
+    }
+
+    .footer__info {
+        margin-bottom: 0;
+    }
+
+    .footer__links {
+        justify-content: flex-end;
+        margin-bottom: 0;
+    }
+
+    .footer__copyright {
+        text-align: center;
+    }
 }

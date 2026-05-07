@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Léxico: Design & Estrutura</title>
     
-    <!-- Fontes Externas -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:wght@400;500;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
 
     <!-- Configurações e Variáveis -->
     <link rel="stylesheet" href="css/variables.css">
@@ -21,34 +20,37 @@
     <link rel="stylesheet" href="css/layout.css">
     
     <!-- Componentes -->
-    <link rel="stylesheet" href="css/components/nav.css">
+    <link rel="stylesheet" href="css/components/navbar.css">
     <link rel="stylesheet" href="css/components/hero.css">
     <link rel="stylesheet" href="css/components/card.css">
     <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/components/btn.css">
     
     <!-- Utilitários -->
     <link rel="stylesheet" href="css/utilities.css">
 </head>
 <body>
+    <div class="navbar__overlay"></div>
     <div class="folha-papel">
-        <header class="main-header">
-            <h1 class="logo">Léxico</h1>
-            <p class="tagline">Design & Estrutura: Uma documentação técnica</p>
+        <header class="navbar">
+            <div class="navbar__brand">
+                <h1 class="navbar__logo">Léxico</h1>
+                <p class="navbar__tagline">Design & Estrutura: Uma documentação técnica</p>
+            </div>
             
             <!-- Menu Hambúrguer -->
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
+            <div class="navbar__toggle">
+                <span class="navbar__toggle-line"></span>
+                <span class="navbar__toggle-line"></span>
+                <span class="navbar__toggle-line"></span>
+            </div>
 
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html" class="active">Início</a></li>
-                    <li><a href="historia.html">História</a></li>
-                    <li><a href="playbook.html">Playbook</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
+            <nav class="navbar__menu">
+                <ul class="navbar__list">
+                    <li><a href="index.html" class="navbar__link navbar__link--active">Início</a></li>
+                    <li><a href="historia.html" class="navbar__link">Historia</a></li>
+                    <li><a href="playbook.html" class="navbar__link">Playbook</a></li>
+                    <li><a href="sobre.html" class="navbar__link">Sobre</a></li>
                 </ul>
             </nav>
         </header>
@@ -66,17 +68,31 @@
 
                 <section id="historia" class="content-section">
                     <h3>Movimentos Históricos</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    <div class="grid">
-                        <div class="card">
-                            <img src="assets/bauhaus.webp" alt="Cartaz do movimento Bauhaus com formas geométricas e tipografia característica, por Joost Schmidt." class="card-img">
-                            <h4>Bauhaus</h4>
-                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos.</p>
+                    <p>Explorando as bases da engenharia de interface através dos tempos.</p>
+                    <div class="cards-grid">
+                        <div class="card card--featured">
+                            <img src="assets/bauhaus.webp" alt="Cartaz do movimento Bauhaus" class="card__image">
+                            <h4 class="card__title">Bauhaus (Destaque)</h4>
+                            <p class="card__description">A escola que unificou arte, artesanato e tecnologia. O berço do design moderno.</p>
+                            <a href="historia.html" class="btn btn--primary card__button">Saiba Mais</a>
                         </div>
                         <div class="card">
-                            <img src="assets/swiss.webp" alt="Exemplos de design suíço focados em grids, tipografia sans-serif e clareza visual." class="card-img">
-                            <h4>Swiss Design</h4>
-                            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
+                            <img src="assets/swiss.webp" alt="Design Suíço" class="card__image">
+                            <h4 class="card__title">Swiss Design</h4>
+                            <p class="card__description">Clareza, objetividade e o uso rigoroso de grids tipográficos.</p>
+                            <a href="#" class="btn btn--outline card__button">Explorar</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/bauhaus.webp" alt="Modernismo" class="card__image">
+                            <h4 class="card__title">Modernismo</h4>
+                            <p class="card__description">A forma segue a função. Uma revolução na estética e usabilidade.</p>
+                            <a href="#" class="btn btn--outline card__button">Detalhes</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/swiss.webp" alt="Pós-Modernismo" class="card__image">
+                            <h4 class="card__title">De Stijl</h4>
+                            <p class="card__description">Abstração pura e universalidade através de cores primárias e linhas retas.</p>
+                            <a href="#" class="btn btn--outline card__button">Ver Guia</a>
                         </div>
                     </div>
                 </section>
@@ -93,22 +109,31 @@
 
         <aside class="sidebar">
             <section class="widget">
-                <h4>Sumário</h4>
-                <ul>
-                    <li><a href="#">Introdução</a></li>
-                    <li><a href="#historia">História</a></li>
-                    <li><a href="#playbook">Playbook</a></li>
+                <h4 class="widget__title">Sumário</h4>
+                <ul class="widget__list">
+                    <li><a href="#" class="btn btn--ghost">Introdução</a></li>
+                    <li><a href="#historia" class="btn btn--ghost">História</a></li>
+                    <li><a href="#playbook" class="btn btn--ghost">Playbook</a></li>
                 </ul>
             </section>
             <section class="widget">
-                <h4>Referências</h4>
+                <h4 class="widget__title">Referências</h4>
                 <p>Confira o guia completo de Engenharia de Interface em nossos arquivos locais.</p>
             </section>
         </aside>
 
-        <footer class="main-footer">
-            <p>&copy; 2026 Léxico: Design & Estrutura. José Matheus Mendonça Farias & José Liedson da Silva.</p>
-            <p>Engenharia de Interface | HTML5 Semântico | CSS3 Modular</p>
+        <footer class="footer">
+            <div class="footer__info">
+                <p class="footer__text">Engenharia de Interface | HTML5 Semântico | CSS3 Modular</p>
+            </div>
+            <div class="footer__links">
+                <a href="#" class="footer__link">Casos de Uso</a>
+                <a href="#" class="footer__link">Termos de Serviço</a>
+            </div>
+            <div class="footer__copyright">
+                <p class="footer__text">&copy; <span id="current-year"></span> <span class="footer__text--highlight">Léxico: Design & Estrutura</span>.</p>
+                <p class="footer__text">José Matheus Mendonça Farias & José Liedson da Silva.</p>
+            </div>
         </footer>
     </div>
 

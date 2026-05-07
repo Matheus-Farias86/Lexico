@@ -8,7 +8,7 @@
     <!-- Fontes Externas -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:wght@400;500;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
 
     <!-- Configurações e Variáveis -->
     <link rel="stylesheet" href="css/variables.css">
@@ -21,34 +21,37 @@
     <link rel="stylesheet" href="css/layout.css">
     
     <!-- Componentes -->
-    <link rel="stylesheet" href="css/components/nav.css">
+    <link rel="stylesheet" href="css/components/navbar.css">
     <link rel="stylesheet" href="css/components/hero.css">
     <link rel="stylesheet" href="css/components/card.css">
     <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/components/btn.css">
     
     <!-- Utilitários -->
     <link rel="stylesheet" href="css/utilities.css">
 </head>
 <body>
+    <div class="navbar__overlay"></div>
     <div class="folha-papel">
-        <header class="main-header">
-            <h1 class="logo">Léxico</h1>
-            <p class="tagline">Playbook Prático de Componentes</p>
+        <header class="navbar">
+            <div class="navbar__brand">
+                <h1 class="navbar__logo">Léxico</h1>
+                <p class="navbar__tagline">Playbook Prático de Componentes</p>
+            </div>
             
             <!-- Menu Hambúrguer -->
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
+            <div class="navbar__toggle">
+                <span class="navbar__toggle-line"></span>
+                <span class="navbar__toggle-line"></span>
+                <span class="navbar__toggle-line"></span>
+            </div>
 
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="historia.html">História</a></li>
-                    <li><a href="playbook.html" class="active">Playbook</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
+            <nav class="navbar__menu">
+                <ul class="navbar__list">
+                    <li><a href="index.html" class="navbar__link">Início</a></li>
+                    <li><a href="historia.html" class="navbar__link">História</a></li>
+                    <li><a href="playbook.html" class="navbar__link navbar__link--active">Playbook</a></li>
+                    <li><a href="sobre.html" class="navbar__link">Sobre</a></li>
                 </ul>
             </nav>
         </header>
@@ -83,16 +86,26 @@
 
         <aside class="sidebar">
             <section class="widget">
-                <h4>Sumário</h4>
-                <ul>
-                    <li><a href="#tipografia">Tipografia</a></li>
-                    <li><a href="#cores">Cores</a></li>
+                <h4 class="widget__title">Sumário</h4>
+                <ul class="widget__list">
+                    <li><a href="#tipografia" class="btn btn--ghost">Tipografia</a></li>
+                    <li><a href="#cores" class="btn btn--ghost">Cores</a></li>
                 </ul>
             </section>
         </aside>
 
-        <footer class="main-footer">
-            <p>&copy; 2026 Léxico: Design & Estrutura. José Matheus Mendonça Farias & José Liedson da Silva.</p>
+        <footer class="footer">
+            <div class="footer__info">
+                <p class="footer__text">Engenharia de Interface | HTML5 Semântico | CSS3 Modular</p>
+            </div>
+            <div class="footer__links">
+                <a href="#" class="footer__link">Casos de Uso</a>
+                <a href="#" class="footer__link">Termos de Serviço</a>
+            </div>
+            <div class="footer__copyright">
+                <p class="footer__text">&copy; <span id="current-year"></span> <span class="footer__text--highlight">Léxico: Design & Estrutura</span>.</p>
+                <p class="footer__text">José Matheus Mendonça Farias & José Liedson da Silva.</p>
+            </div>
         </footer>
     </div>
     <script src="js/main.js" defer></script>

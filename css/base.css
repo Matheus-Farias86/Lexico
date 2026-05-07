@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--areia-base);
     background-image: linear-gradient(var(--bg-dot) 1px, transparent 1px),

@@ -1,0 +1,164 @@
+/* ---------------------------------------------------------
+   NAVBAR (BEM Component)
+   --------------------------------------------------------- */
+.navbar {
+    padding: var(--space-lg) var(--space-sm);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    order: 1;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.navbar__logo {
+    font-family: var(--font-serif);
+    font-size: var(--fs-h1);
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.navbar__tagline {
+    font-size: var(--fs-xs);
+    color: var(--marrom-accent);
+}
+
+/* Menu Hambúrguer */
+.navbar__toggle {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: var(--space-sm);
+    right: var(--space-sm);
+    padding: 10px;
+    z-index: 2001;
+}
+
+.navbar__toggle-line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-primary);
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+.navbar__menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: var(--color-bg-secondary);
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    z-index: 2000;
+    padding: var(--space-xl) var(--space-md);
+    transition: right 0.3s ease;
+}
+
+.navbar__menu--active {
+    display: block;
+    right: 0;
+}
+
+.navbar__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-md);
+    padding: 0;
+}
+
+.navbar__link {
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-sm);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.navbar__link:hover {
+    color: var(--color-text);
+}
+
+.navbar__link--active {
+    font-weight: var(--fw-bold);
+    border-bottom: 2px solid var(--color-primary);
+}
+
+/* Widgets da Sidebar (Sumário e Referências) - BEM */
+.widget__list {
+    list-style: none !important; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.widget__list li {
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+}
+
+/* Modificador de Bloco (Scroll) */
+.navbar--scrolled {
+    background-color: rgba(253, 246, 227, 0.95);
+    backdrop-filter: blur(5px);
+    box-shadow: var(--shadow-md);
+    padding-top: var(--space-sm);
+    padding-bottom: var(--space-sm);
+}
+
+/* Overlay */
+.navbar__overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 1999;
+}
+
+.navbar__overlay--active {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: var(--space-xl) var(--space-lg);
+        border-bottom: var(--border-papel);
+    }
+
+    .navbar__toggle {
+        display: none;
+    }
+
+    .navbar__menu {
+        display: block;
+        position: static;
+        width: auto;
+        height: auto;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .navbar__list {
+        flex-direction: row;
+        gap: var(--space-lg);
+        align-items: center;
+    }
+}
