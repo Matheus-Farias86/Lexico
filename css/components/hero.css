@@ -13,15 +13,15 @@
 }
 
 .meta {
-    font-size: 0.75rem;
-    color: var(--marrom-accent);
+    font-size: var(--fs-xs);
+    color: var(--color-text-secondary);
     margin-bottom: var(--space-md);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .intro .lead {
-    font-size: 1.15rem;
-    color: var(--marrom-medium);
+    font-size: var(--fs-md);
+    color: var(--color-primary);
     margin-bottom: var(--space-lg);
 }

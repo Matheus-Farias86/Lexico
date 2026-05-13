@@ -1,0 +1,29 @@
+/* 1. Declaração da ordem das camadas */
+@layer tokens, reset, base, layout, components, utilities;
+
+/* 2. Importações para camadas específicas */
+
+/* Camada: TOKENS */
+@import url("tokens/primitives.css") layer(tokens);
+@import url("tokens/semantic.css") layer(tokens);
+@import url("tokens/typography.css") layer(tokens);
+@import url("tokens/spacing.css") layer(tokens);
+
+/* Camada: RESET */
+@import url("reset.css") layer(reset);
+
+/* Camada: BASE */
+@import url("base.css") layer(base);
+
+/* Camada: LAYOUT */
+@import url("layout.css") layer(layout);
+
+/* Camada: COMPONENTES */
+@import url("components/navbar.css") layer(components);
+@import url("components/hero.css") layer(components);
+@import url("components/card.css") layer(components);
+@import url("components/footer.css") layer(components);
+@import url("components/btn.css") layer(components);
+
+/* Camada: UTILITÁRIOS */
+@import url("utilities.css") layer(utilities);

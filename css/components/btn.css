@@ -7,7 +7,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    padding: 0.75rem 1.5rem;
+    padding: var(--space-sm) var(--space-md);
     font-family: var(--font-sans);
     font-weight: var(--fw-bold);
     font-size: var(--fs-sm);
@@ -21,40 +21,40 @@
 }
 
 .btn:focus-visible {
-    outline: 3px solid var(--color-primary-500);
+    outline: 3px solid var(--color-action-focus);
     outline-offset: 2px;
 }
 
 /* Variantes */
 .btn--primary {
-    background-color: var(--color-primary);
-    color: white;
-    border-color: var(--color-primary);
+    background-color: var(--color-action-primary);
+    color: var(--color-action-primary-text);
+    border-color: var(--color-action-primary);
 }
 
 .btn--primary:hover {
-    background-color: var(--color-text);
-    border-color: var(--color-text);
+    background-color: var(--color-action-primary-hover);
+    border-color: var(--color-action-primary-hover);
 }
 
 .btn--outline {
-    background-color: transparent;
-    border-color: var(--color-primary);
-    color: var(--color-primary);
+    background-color: var(--color-action-outline);
+    border-color: var(--color-action-outline-text);
+    color: var(--color-action-outline-text);
 }
 
 .btn--outline:hover {
-    background-color: var(--color-primary);
-    color: white;
+    background-color: var(--color-action-outline-hover-bg);
+    color: var(--color-action-outline-hover-text);
 }
 
 .btn--ghost {
     background-color: transparent;
     border-color: transparent;
-    color: var(--color-primary);
+    color: var(--color-action-primary);
 }
 
 .btn--ghost:hover {
-    background-color: rgba(93, 64, 55, 0.1);
-    border-color: rgba(93, 64, 55, 0.2);
+    background-color: var(--color-action-ghost-hover-bg);
+    border-color: var(--color-action-ghost-hover-border);
 }

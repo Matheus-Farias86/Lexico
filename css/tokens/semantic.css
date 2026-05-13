@@ -1,0 +1,83 @@
+/* css/tokens/semantic.css */
+/* Convenção adotada: Categoria - Função - Propriedade - Variante*/
+/* Tokens de intenção. Componentes DEVEM referenciar estes. */
+:root {
+    /* --- Intenções de Cor (Tema Claro - Default) --- */
+    --color-primary: var(--_color-brand-700);
+    --color-text: var(--_color-brand-900);
+    --color-text-secondary: var(--_color-brand-500);
+    --color-bg-secondary: var(--_color-brand-100);
+    --color-border: var(--_color-brand-500);
+    --color-success: var(--_color-green-500);
+
+    /* Cores de Ação (ex: Botões) */
+    --color-action-primary: var(--_color-brand-700);
+    --color-action-primary-hover: var(--_color-brand-900);
+    --color-action-primary-text: var(--_color-white);
+    
+    --color-action-outline: transparent;
+    --color-action-outline-text: var(--_color-brand-700);
+    --color-action-outline-hover-bg: var(--_color-brand-700);
+    --color-action-outline-hover-text: var(--_color-white);
+    
+    --color-action-focus: var(--_color-blue-500);
+    --color-action-ghost-hover-bg: var(--_color-brand-700-alpha-10);
+    --color-action-ghost-hover-border: var(--_color-brand-700-alpha-20);
+
+    /* Cores de Superfície e Layout */
+    --color-surface-shadow: var(--_color-black-alpha-20);
+    --color-sidebar-bg: var(--_color-brand-500-alpha-5);
+
+    /* Cores Específicas de Seção */
+    --color-footer-bg: var(--_color-brand-900);
+    --color-footer-text: var(--_color-brand-100);
+
+    /* Cores de suporte e legado semântico */
+    --areia-light: var(--_color-brand-100);
+    --areia-base: var(--_color-brand-200);
+    --marrom-light: var(--_color-brand-300);
+    --marrom-medium: var(--_color-brand-700);
+    --marrom-accent: var(--_color-brand-500);
+    --marrom-dark: var(--_color-brand-900);
+    --border-papel: 1px solid var(--color-border);
+    --bg-dot: var(--_color-white-alpha-20);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* --- Intenções de Cor (Tema Escuro) --- */
+        --color-primary: var(--_color-brand-300);
+        --color-text: var(--_color-brand-dark-text-light);
+        --color-text-secondary: var(--_color-brand-500);
+        --color-bg-secondary: var(--_color-brand-dark-bg-light);
+        --color-border: var(--_color-brand-900);
+        
+        --color-action-primary: var(--_color-brand-500);
+        --color-action-primary-hover: var(--_color-brand-300);
+        --color-action-primary-text: var(--_color-white);
+
+        --color-action-outline-text: var(--_color-brand-500);
+        --color-action-outline-hover-bg: var(--_color-brand-500);
+        --color-action-outline-hover-text: var(--_color-white);
+
+        --color-action-ghost-hover-bg: var(--_color-brand-500-alpha-15);
+        --color-action-ghost-hover-border: var(--_color-brand-500-alpha-25);
+
+        --color-surface-shadow: var(--_color-black-alpha-60);
+        --color-sidebar-bg: var(--_color-brand-500-alpha-8);
+
+        /* Footer no Dark Mode */
+        --color-footer-bg: var(--_color-black);
+        --color-footer-text: var(--color-text);
+
+        /* Legados e Variáveis de Suporte */
+        --areia-light: var(--_color-brand-dark-bg-light);
+        --areia-base: var(--_color-brand-dark-bg-base);
+        --marrom-light: var(--_color-brand-900);
+        --marrom-medium: var(--_color-brand-300);
+        --marrom-accent: var(--_color-brand-500);
+        --marrom-dark: var(--_color-brand-dark-text-light);
+        --border-papel: 1px solid var(--color-border);
+        --bg-dot: var(--color-brand-500-alpha-10);
+    }
+}

@@ -1,8 +1,8 @@
 .folha-papel {
-    max-width: 1100px;
+    max-width: var(--container-max-width);
     margin: 0 auto;
     background-color: var(--areia-light);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px var(--color-surface-shadow);
     border: var(--border-papel);
     min-height: 100vh;
     display: flex;
@@ -21,7 +21,7 @@
 
 .sidebar {
     padding: var(--space-lg) var(--space-sm);
-    background-color: rgba(141, 110, 99, 0.05);
+    background-color: var(--color-sidebar-bg);
     border-top: var(--border-papel);
     border-bottom: var(--border-papel);
     order: 2;

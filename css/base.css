@@ -7,7 +7,7 @@ body {
     background-image: linear-gradient(var(--bg-dot) 1px, transparent 1px),
                       linear-gradient(90deg, var(--bg-dot) 1px, transparent 1px);
     background-size: 20px 20px;
-    color: var(--marrom-dark);
+    color: var(--color-text);
     font-family: var(--font-sans);
     font-size: var(--fs-base);
     line-height: 1.6;

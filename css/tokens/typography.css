@@ -1,0 +1,26 @@
+/* css/tokens/typography.css */
+:root {
+    /* --- Famílias de Fonte --- */
+    --font-serif: "Georgia", "Times New Roman", serif;
+    --font-sans: 'Google Sans', "Helvetica Neue", Arial, sans-serif;
+    
+    /* --- Escala Fluida (Advanced) --- */
+    /* Mantemos a arquitetura fluida do projeto como token semântico de layout */
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-base: clamp(0.875rem, 2vw, 1rem);
+    --fs-md: 1.25rem;
+    --fs-lg: 1.5rem;
+    --fs-h2: clamp(1.25rem, 3vw, 1.875rem);
+    --fs-h1: clamp(1.75rem, 4vw, 2.5rem);
+
+    /* --- Pesos --- */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+
+    /* --- Altura de Linha --- */
+    --leading-tight: 1.2;
+    --leading-normal: 1.5;
+    --leading-loose: 1.8;
+}

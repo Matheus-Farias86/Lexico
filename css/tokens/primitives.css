@@ -1,0 +1,44 @@
+/* css/tokens/primitives.css */
+/* O prefixo _ indica que são tokens privados (não usar diretamente em componentes) */
+:root {
+    /* --- Cores Brutas (Paleta) --- */
+    --_color-blue-100: #E6F0F9;
+    --_color-blue-500: #2E75B6;
+    --_color-blue-900: #1E4D78;
+    
+    --_color-gray-100: #F3F4F6;
+    --_color-gray-500: #6B7280;
+    --_color-gray-800: #1F2937;
+    --_color-gray-900: #111827;
+
+    --_color-brand-100: #fdf6e3;  /* Areia Light */
+    --_color-brand-200: #f4ecd8;  /* Areia Base */
+    --_color-brand-300: #d7ccc8;  /* Marrom Light */
+    --_color-brand-500: #8d6e63;  /* Marrom Accent */
+    --_color-brand-500-alpha-5: #8D6E630D; /* Marrom Accent com 5% de opacidade */
+    --_color-brand-500-alpha-8: #8D6E6314; /* Marrom Accent com 8% de opacidade */
+    --_color-brand-500-alpha-10: #8D6E631A; /* Marrom Accent com 10% de opacidade */
+    --_color-brand-500-alpha-15: #8D6E6326; /* Marrom Accent com 15% de opacidade */
+    --_color-brand-500-alpha-20: #8d6e6333; /* Marrom Accent com 20% de opacidade */
+    --_color-brand-500-alpha-25: #8D6E6340; /* Marrom Accent com 25% de opacidade */
+    --_color-brand-700: #5d4037;  /* Marrom Medium */
+    --_color-brand-700-alpha-10: #5d40371a; /* Marrom Medium com 10% de opacidade */
+    --_color-brand-700-alpha-20: #5D403733; /* Marrom Medium com 20% de opacidade */
+    --_color-brand-900: #3e2723;  /* Marrom Dark */
+    
+    --_color-green-500: #2e7d32;
+    --_color-white: #ffffff;
+    --_color-black: #000000;
+    --_color-black-alpha-20: #00000033; /* Preto com 20% de opacidade */
+    --_color-black-alpha-60: #00000099; /* Preto com 60% de opacidade */
+    --_color-white-alpha-20: #ffffff33; /* Branco com 20% de opacidade */
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Primitivas baseadas no tema escuro original */
+        --_color-brand-dark-bg-light: #1a1a1a;
+        --_color-brand-dark-bg-base: #121212;
+        --_color-brand-dark-text-light: #e0d5c1;
+    }
+}

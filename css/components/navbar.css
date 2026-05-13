@@ -21,7 +21,7 @@
 
 .navbar__tagline {
     font-size: var(--fs-xs);
-    color: var(--marrom-accent);
+    color: var(--color-text-secondary);
 }
 
 /* Menu Hambúrguer */
@@ -109,7 +109,7 @@
 
 /* Modificador de Bloco (Scroll) */
 .navbar--scrolled {
-    background-color: rgba(253, 246, 227, 0.95);
+    background-color: var(--color-bg-secondary);
     backdrop-filter: blur(5px);
     box-shadow: var(--shadow-md);
     padding-top: var(--space-sm);
