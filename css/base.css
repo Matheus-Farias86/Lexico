@@ -20,3 +20,25 @@ body {
         padding: var(--space-xl);
     }
 }
+
+/* --- Acessibilidade: Navegação por Teclado (Fase 3 - Demanda 2) --- */
+:focus {
+    outline: none;
+}
+
+:focus-visible {
+    outline: 3px solid var(--color-action-focus);
+    outline-offset: 3px;
+    border-radius: var(--radius-sm);
+}
+
+/* --- Garantia WCAG de Área de Toque Mínima (Checklist Item 03) --- */
+@media (pointer: coarse) {
+    .navbar__link, .footer__link, .btn {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
+

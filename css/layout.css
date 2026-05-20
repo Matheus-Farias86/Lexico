@@ -30,6 +30,8 @@
 
 .main-content {
     order: 3;
+    container-type: inline-size;
+    container-name: main-content;
 }
 
 /* ---------------------------------------------------------
@@ -38,7 +40,7 @@
 @media (min-width: 768px) {
     .folha-papel {
         display: grid;
-        grid-template-columns: 240px 1fr;
+        grid-template-columns: 15rem 1fr;
         grid-template-areas: 
             "header header"
             "sidebar main"
@@ -68,6 +70,21 @@
         background-color: transparent;
         padding: var(--space-xl) var(--space-lg);
     }
+
+    /* Ajuste de imagens alinhadas ao texto nas seções de conteúdo (historia.html) */
+    .content-section .card-img {
+        float: left;
+        margin-right: var(--space-lg);
+        margin-bottom: var(--space-sm);
+        max-width: 240px;
+        border-radius: var(--radius-sm);
+    }
+    
+    .content-section::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
 
 /* ---------------------------------------------------------
@@ -75,6 +92,6 @@
    --------------------------------------------------------- */
 @media (min-width: 1024px) {
     .folha-papel {
-        grid-template-columns: 280px 1fr;
+        grid-template-columns: 17.5rem 1fr;
     }
 }

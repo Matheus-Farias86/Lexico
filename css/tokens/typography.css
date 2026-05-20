@@ -6,7 +6,7 @@
     
     /* --- Escala Fluida (Advanced) --- */
     /* Mantemos a arquitetura fluida do projeto como token semântico de layout */
-    --fs-xs: 0.75rem;
+    --fs-xs: 0.875rem; /* Aumentado de 0.75rem (12px) para 0.875rem (14px) para checklist */
     --fs-sm: 0.875rem;
     --fs-base: clamp(0.875rem, 2vw, 1rem);
     --fs-md: 1.25rem;
@@ -23,4 +23,13 @@
     --leading-tight: 1.2;
     --leading-normal: 1.5;
     --leading-loose: 1.8;
+}
+
+/* --- Legibilidade em Projetor (Fase 3 - Demanda 1) --- */
+@media (min-width: 1600px) {
+    :root {
+        --fs-base: 1.125rem; /* Aumenta a base de leitura para 18px */
+        --fs-md: 1.375rem;   /* Ajuste proporcional */
+        --fs-lg: 1.625rem;
+    }
 }
