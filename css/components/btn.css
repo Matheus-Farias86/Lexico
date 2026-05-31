@@ -3,6 +3,7 @@
    --------------------------------------------------------- */
 .btn {
     display: inline-block;
+    width: auto; /* Sobrescreve o width: 100% do reset para elementos <button> */
     max-width: 100%; /* Garante que o botão não estoure o container */
     overflow: hidden;
     text-overflow: ellipsis;
@@ -18,6 +19,18 @@
     transition: all 0.2s ease;
     cursor: pointer;
     border: 2px solid transparent;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn:disabled,
+.btn.is-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+    filter: grayscale(0.5);
 }
 
 .btn:focus-visible {

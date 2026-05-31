@@ -33,6 +33,15 @@ body {
 }
 
 /* --- Garantia WCAG de Área de Toque Mínima (Checklist Item 03) --- */
+/* --- Tipografia Editorial: Justificação & Legibilidade --- */
+.content-section p {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    -webkit-hyphens: auto; /* Safari */
+    -ms-hyphens: auto;      /* IE/Edge */
+}
+
 @media (pointer: coarse) {
     .navbar__link, .footer__link, .btn {
         min-height: 44px;

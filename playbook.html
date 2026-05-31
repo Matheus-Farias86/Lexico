@@ -10,8 +10,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:wght@400;500;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
 
-    <!-- Arquitetura de Design Tokens & Camadas (Aula 10) -->
+    <!-- Arquitetura de Design Tokens & Camadas -->
     <link rel="stylesheet" href="css/main.css">
+    <style>
+        /* Estilos específicos para a demonstração do Playbook */
+        .playbook-demo {
+            padding: var(--space-md);
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-sm);
+            margin-bottom: var(--space-sm);
+        }
+        .code-block {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: var(--space-sm);
+            border-radius: var(--radius-sm);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: var(--fs-xs);
+            overflow-x: auto;
+            margin-top: var(--space-xs);
+        }
+        .color-swatch {
+            width: 100%;
+            height: 80px;
+            border-radius: var(--radius-sm);
+            margin-bottom: var(--space-xs);
+            border: 1px solid var(--color-border);
+        }
+    </style>
 </head>
 <body>
     <div class="navbar__overlay"></div>
@@ -19,10 +46,9 @@
         <header class="navbar">
             <div class="navbar__brand">
                 <h1 class="navbar__logo">Léxico</h1>
-                <p class="navbar__tagline">Playbook Prático de Componentes</p>
+                <p class="navbar__tagline">Laboratório de Engenharia Histórica</p>
             </div>
             
-            <!-- Menu Hambúrguer -->
             <div class="navbar__toggle">
                 <span class="navbar__toggle-line"></span>
                 <span class="navbar__toggle-line"></span>
@@ -42,26 +68,99 @@
         <main class="main-content">
             <article class="hero-article">
                 <header>
-                    <h2 class="article-title">Guia de Implementação</h2>
-                    <div class="meta">Padrões de Interface</div>
+                    <h2 class="article-title">O Playbook Prático</h2>
+                    <div class="meta">Guia de Implementação: Do Conceito ao Código</div>
                 </header>
-                
+
+                <!-- Módulo 1: Jan Tschichold & Tipografia -->
                 <section id="tipografia" class="content-section">
-                    <h3>Tipografia</h3>
-                    <p>Utilizamos a <strong>Google Sans</strong> para legibilidade técnica e fontes <strong>Serif</strong> (Georgia/Times) para corpo de texto editorial.</p>
+                    <h3>1. Jan Tschichold & A Nova Tipografia</h3>
+                    <p><strong>Conceito:</strong> Hierarquia visual e clareza técnica. Tschichold nos ensinou que a tipografia deve ser funcional e organizada por escalas lógicas.</p>
+                    
+                    <div class="playbook-demo">
+                        <h1 style="font-family: var(--font-sans); margin-bottom: var(--space-xs);">Título H1 (Escala Fluida)</h1>
+                        <p style="font-family: var(--font-serif); line-height: var(--leading-normal);">Este é um parágrafo usando a fonte serifada para leitura editorial, garantindo contraste e legibilidade conforme os princípios de Tschichold.</p>
+                    </div>
+                    <div class="code-block">
+                        /* Design Tokens de Tipografia */<br>
+                        --font-sans: 'Google Sans', sans-serif;<br>
+                        --font-serif: "Georgia", serif;<br>
+                        --fs-h1: clamp(1.75rem, 4vw, 2.5rem);<br>
+                        --leading-normal: 1.5;
+                    </div>
                 </section>
 
-                <section id="cores" class="content-section">
-                    <h3>Paleta de Cores</h3>
-                    <div class="grid">
-                        <div class="card" style="border-left: 10px solid var(--color-primary)">
-                            <h4>Primária</h4>
-                            <p>#5D4037</p>
+                <hr class="divider">
+
+                <!-- Módulo 2: De Stijl & Design Tokens -->
+                <section id="tokens" class="content-section">
+                    <h3>2. De Stijl & Primitivas de Cor</h3>
+                    <p><strong>Conceito:</strong> Redução ao essencial. As cores no Léxico são tratadas como Design Tokens puros, agindo como as cores primárias de Mondrian para sustentar a estrutura visual.</p>
+                    
+                    <div class="cards-grid">
+                        <div class="card">
+                            <div class="color-swatch" style="background: var(--color-action-primary);"></div>
+                            <h4 class="card__title">Primary Token</h4>
+                            <p class="card__description">#5D4037 - Usada para ações e destaque estrutural.</p>
                         </div>
-                        <div class="card" style="border-left: 10px solid var(--color-success)">
-                            <h4>Sucesso</h4>
-                            <p>#2E7D32</p>
+                        <div class="card">
+                            <div class="color-swatch" style="background: var(--color-bg-secondary);"></div>
+                            <h4 class="card__title">Surface Token</h4>
+                            <p class="card__description">#FAF9F6 - A base neutra que permite o respiro visual.</p>
                         </div>
+                    </div>
+                    <div class="code-block">
+                        /* Cores como Primitivas Históricas */<br>
+                        --color-action-primary: #5D4037;<br>
+                        --color-bg-secondary: #FAF9F6;
+                    </div>
+                </section>
+
+                <hr class="divider">
+
+                <!-- Módulo 3: Swiss Design & Grid System -->
+                <section id="grids" class="content-section">
+                    <h3>3. Swiss Design & Sistemas de Grids</h3>
+                    <p><strong>Conceition:</strong> O rigor da grade modular. Utilizamos CSS Grid para replicar o sistema proporcional suíço, garantindo alinhamento e uso consciente do espaço negativo.</p>
+                    
+                    <div class="playbook-demo">
+                        <div class="cards-grid" style="margin-top: 0;">
+                            <div class="card" style="border-style: dashed; opacity: 0.6;"><p>Módulo 01</p></div>
+                            <div class="card" style="border-style: dashed; opacity: 0.6;"><p>Módulo 02</p></div>
+                            <div class="card" style="border-style: dashed; opacity: 0.6;"><p>Módulo 03</p></div>
+                        </div>
+                    </div>
+                    <div class="code-block">
+                        /* Implementação do Grid Suíço */<br>
+                        .cards-grid {<br>
+                        &nbsp;&nbsp;display: grid;<br>
+                        &nbsp;&nbsp;grid-template-columns: repeat(3, 1fr);<br>
+                        &nbsp;&nbsp;gap: var(--space-md);<br>
+                        }
+                    </div>
+                </section>
+
+                <hr class="divider">
+
+                <!-- Módulo 4: Bauhaus & Componentização -->
+                <section id="componentes" class="content-section">
+                    <h3>4. Bauhaus & Componentes Funcionais</h3>
+                    <p><strong>Conceito:</strong> Forma segue a Função. Nossos componentes (Botões e Cards) são peças industriais reproduzíveis, focadas inteiramente na utilidade técnica.</p>
+                    
+                    <div class="playbook-demo">
+                        <div style="display: flex; gap: var(--space-sm); align-items: center; flex-wrap: wrap;">
+                            <a href="#" class="btn btn--primary">Primário</a>
+                            <a href="#" class="btn btn--outline">Outline</a>
+                            <button class="btn btn--primary" disabled>Inativo</button>
+                        </div>
+                    </div>
+                    <div class="code-block">
+                        /* Componente BEM (Bauhaus Style) */<br>
+                        .btn {<br>
+                        &nbsp;&nbsp;padding: var(--space-sm) var(--space-md);<br>
+                        &nbsp;&nbsp;text-transform: uppercase;<br>
+                        &nbsp;&nbsp;font-weight: var(--fw-bold);<br>
+                        }
                     </div>
                 </section>
             </article>
@@ -69,10 +168,12 @@
 
         <aside class="sidebar">
             <section class="widget">
-                <h4 class="widget__title">Sumário</h4>
+                <h4 class="widget__title">Sumário do Playbook</h4>
                 <ul class="widget__list">
-                    <li><a href="#tipografia" class="btn btn--ghost">Tipografia</a></li>
-                    <li><a href="#cores" class="btn btn--ghost">Cores</a></li>
+                    <li><a href="#tipografia" class="btn btn--ghost">1. Tipografia (Tschichold)</a></li>
+                    <li><a href="#tokens" class="btn btn--ghost">2. Tokens (De Stijl)</a></li>
+                    <li><a href="#grids" class="btn btn--ghost">3. Grids (Swiss)</a></li>
+                    <li><a href="#componentes" class="btn btn--ghost">4. Componentes (Bauhaus)</a></li>
                 </ul>
             </section>
         </aside>

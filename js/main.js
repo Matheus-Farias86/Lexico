@@ -60,4 +60,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
     }
+
+    // 4. Prevenção de Comportamento Padrão em Demonstrações
+    const demoLinks = document.querySelectorAll('.playbook-demo a[href="#"], .playbook-demo button');
+    demoLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            console.log('Interação capturada no Laboratório de Engenharia.');
+        });
+    });
 });
